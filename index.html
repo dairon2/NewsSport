@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSN Deportes - Clon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/MSN_logo.svg/1200px-MSN_logo.svg.png" alt="MSN Logo" class="logo">
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar" class="search-input">
+                <button class="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-controls">
+                <button class="login-button">Iniciar sesión</button>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Descubrir</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Siguiendo</a></li>
+                <li class="nav-item active"><a href="#" class="nav-link">Deportes</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Fútbol</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Carreras</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Baloncesto</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Tenis</a></li>
+                <li class="nav-item"><a href="#" class="nav-link more-menu">···</a></li>
+            </ul>
+            <div class="personalize-button">
+                <i class="fas fa-cog"></i> Personalizar
+            </div>
+        </nav>
+    </header>
+
+    <div class="live-matches-bar">
+        <div class="live-indicator">
+            <span class="live-dot"></span>
+            Partidos en directo
+        </div>
+        <div class="matches-ticker">
+            <div class="match">
+                <span class="team">Real Madrid</span>
+                <span class="score">2-1</span>
+                <span class="team">Barcelona</span>
+            </div>
+            <div class="match">
+                <span class="team">Atlético Madrid</span>
+                <span class="score">0-0</span>
+                <span class="team">Sevilla</span>
+            </div>
+            <div class="match">
+                <span class="team">Man. City</span>
+                <span class="score">3-1</span>
+                <span class="team">Liverpool</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="competitions-bar">
+        <div class="search-competitions">
+            <input type="text" placeholder="Buscar" class="competition-search">
+            <button class="competition-search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="competitions-list">
+            <div class="competition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Conmebol_Libertadores_logo.svg/1200px-Conmebol_Libertadores_logo.svg.png" alt="Copa Libertadores" class="competition-logo">
+                Copa Libertadores
+                <button class="add-button"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="competition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Serie_A_logo_2022.svg/1200px-Serie_A_logo_2022.svg.png" alt="Serie A" class="competition-logo">
+                Serie A
+                <button class="add-button"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="competition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/UEFA_Europa_League_logo.svg/1200px-UEFA_Europa_League_logo.svg.png" alt="Europa League" class="competition-logo">
+                Liga Europa de la UEFA
+                <button class="add-button"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+        <div class="competitions-nav">
+            <button class="nav-button prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="nav-button next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <section class="featured-section">
+            <div class="featured-news">
+                <div class="news-card main">
+                    <img src="https://images.daznservices.com/di/library/DAZN_News/f5/81/formula-1_17z4kcmf4iw3f1kk2utt9nzaog.jpg" alt="F1 Race" class="news-image">
+                    <div class="news-content">
+                        <h2>Gran Premio de Australia: Fecha, horario y cómo ver la carrera de Fórmula 1</h2>
+                        <p>Todo lo que necesitas saber sobre la tercera prueba del calendario del Mundial 2025</p>
+                    </div>
+                </div>
+            </div>
+            <div class="secondary-news">
+                <div class="news-card">
+                    <img src="https://assets.laliga.com/assets/2019/09/17/xlarge/213a444a24eb4222960d964b764599e5.jpeg" alt="LaLiga" class="news-image">
+                    <div class="news-content">
+                        <h3>La Liga pone fecha y hora a los partidos de la jornada 32</h3>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://phantom-marca.unidadeditorial.es/d1a5c99c0c8b43a50dbe1ceca5d5c4b5/resize/1320/f/jpg/assets/multimedia/imagenes/2023/03/19/16792961364711.jpg" alt="Real Madrid" class="news-image">
+                    <div class="news-content">
+                        <h3>Carlo Ancelotti: "Estamos en un buen momento para afrontar el clásico"</h3>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://images.daznservices.com/di/library/DAZN_News/af/63/carlos-alcaraz-indian-wells-2023_1w4z5s4kld96j1g5m5ktf3d4n2.jpg" alt="Tennis" class="news-image">
+                    <div class="news-content">
+                        <h3>Alcaraz avanza a cuartos de final en el Masters 1000 de Miami</h3>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://phantom-marca.unidadeditorial.es/2994d75d84b22402c5f5e15276384e96/resize/1320/f/jpg/assets/multimedia/imagenes/2022/06/02/16541807606851.jpg" alt="NBA" class="news-image">
+                    <div class="news-content">
+                        <h3>Lakers vence a Suns y se acerca a los playoffs de la NBA</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="dataContainer" class="data-section">
+            <!-- Aquí se cargarán los datos deportivos -->
+            <div class="section-header">
+                <h2>Resultados y clasificaciones</h2>
+                <div class="controls">
+                    <select id="sportSelect" class="sport-select">
+                        <option value="soccer">Fútbol</option>
+                        <option value="basketball">Baloncesto</option>
+                        <option value="tennis">Tenis</option>
+                    </select>
+                    <button id="loadButton" class="load-button">Cargar Datos</button>
+                </div>
+            </div>
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <span>Cargando datos...</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <span>© 2025 Microsoft</span>
+            </div>
+            <div class="footer-center">
+                <a href="#">Privacidad y cookies</a>
+                <a href="#">Términos de uso</a>
+                <a href="#">Anunciar</a>
+            </div>
+            <div class="footer-right">
+                <button class="feedback-button">
+                    <i class="far fa-comment-alt"></i> Danos tu opinión
+                </button>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
